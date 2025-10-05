@@ -32,9 +32,10 @@ make
 ```
 y se deberían mostrar los resultados en la pantalla de la terminal.
 
-- Los resultados que se muestran para cada método de ordenación son los siguientes:
-  - Las primeras lineas de los archivos con los códigos postales antes de ser ordenados.
-  - Los primeros códigos postales después de que los archivos fueron ordenados por el método aplicado.
+- Los resultados que se muestran para cada método de ordenación son los siguientes, junto con algunas indicaciones:
+  - Las primeras 10 lineas de los archivos con los códigos postales antes de ser ordenados.
+  - Los primeros 10 códigos postales después de que los archivos fueron ordenados por el método aplicado.
+  - (En caso de que se quiera mostrar más o menos de 10 códigos postales, se debe cambiar el valor de `int sampleSize` de la función `showSample()` en `test.cpp` y volver a repetir todo el proceso de compilación.)
   - Tiempo de procesamiento del método aplicado en formato (μr ± σr), donde μr es el promedio y σr es la desviación.
   - (El código realiza la ejecución de cada método 5 veces en cada uno de los 3 archivos .txt, tal como se menciona en el enunciado. Esto quiere decir que el tiempo de procesamiento del método está calculado según el promedio (μ) y la desviación estándar (σ) a partir de las 5 ejecuciones del mismo método sobre el mismo conjunto de datos.)
 
