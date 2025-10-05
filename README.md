@@ -8,7 +8,10 @@ archivos llamados `codes_500K.txt`, `codes_1M.txt` y `codes_10M.txt` que vienen 
 mkdir build
 ```
 
-3- Ir a la carpeta `build` creada que se encuentra en `cpp/build`.
+3- Ir a la carpeta `build` creada que se encuentra en `cpp/build` ejecutando:
+```bash
+cd build
+```
 
 4- En caso de haber archivos previamente creados, realizar el siguiente comando en la terminal: 
 ```bash
