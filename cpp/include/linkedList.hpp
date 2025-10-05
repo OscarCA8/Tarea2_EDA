@@ -1,3 +1,7 @@
+/*
+ * linkedList.hpp
+ *
+ */
 #ifndef LINKEDLIST_HPP_
 #define LINKEDLIST_HPP_
 
@@ -6,6 +10,7 @@
 class LinkedList {
 private:
     Node* head;
+    Node* tail;
 
 public:
     LinkedList();

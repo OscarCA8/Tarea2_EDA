@@ -1,7 +1,11 @@
+/*
+ * linkedList.cpp
+ *
+ */
 #include "linkedList.hpp"
 #include <iostream>
 
-LinkedList::LinkedList() : head(nullptr) { }
+LinkedList::LinkedList() : head(nullptr), tail(nullptr) { }
 
 void LinkedList::insertFirst(int val) {
     Node* node = new Node(val);
@@ -16,13 +20,10 @@ void LinkedList::insertFirst(int val) {
 void LinkedList::insertLast(int val) {
     Node* node = new Node(val);
     if (head == nullptr) {
-        head = node;
+        head = tail = node;
     } else {
-        Node* ptr = head;
-        while (ptr->getNext() != nullptr) {
-            ptr = ptr->getNext();
-        }
-        ptr->setNext(node);
+        tail->setNext(node);
+        tail = node;
     }
 }
 
@@ -30,6 +31,9 @@ void LinkedList::removeFirst() {
     Node* ptr = head;
     if (head != nullptr) {
         head = head->getNext();
+        if (head == nullptr) {
+            tail = nullptr;
+        }
         delete ptr;
     }
 }
@@ -59,6 +63,7 @@ void LinkedList::removeAll() {
     while (head != nullptr) {
         removeFirst();
     }
+    tail = nullptr;
 }
 
 Node* LinkedList::find(int val) {
