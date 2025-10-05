@@ -3,7 +3,7 @@
 1- En cpp, debe ir al archivo llamado `test.cpp` y en las líneas de código N° 31, 32 y 33 (Especificamente, en el `main()`) debe cambiar las rutas de los datasets por la rutas donde usted tenga los 
 archivos llamados `codes_500K.txt`, `codes_1M.txt` y `codes_10M.txt` que vienen en esta carpeta. (Recuerde guardar el archivo luego de hacer estos cambios :D)
 
-2- Ir a la carpeta `build` que se encuentra en cpp/build
+2- Ir a la carpeta `build` que se encuentra en `cpp/build`.
 
 3- En caso de haber archivos previamente creados, realizar el siguiente comando en la terminal: 
 ```bash
@@ -31,7 +31,7 @@ y se deberían mostrar los resultados en la pantalla de la terminal.
   - Las primeras lineas de los archivos con los códigos postales antes de ser ordenados.
   - Los primeros códigos postales después de que los archivos fueron ordenados por el método aplicado.
   - Tiempo de procesamiento del método aplicado en formato (μr ± σr), donde μr es el promedio y σr es la desviación.
-  ## El código realiza la ejecución de cada método 5 veces, tal como se menciona en el enunciado. Esto quiere decir que el tiempo de procesamiento del método está calculado según el promedio (μ) y la desviación estándar (σ) a partir de las 5 ejecuciones del mismo método sobre el mismo conjunto de datos.
+  - (El código realiza la ejecución de cada método 5 veces en cada uno de los 3 archivos .txt, tal como se menciona en el enunciado. Esto quiere decir que el tiempo de procesamiento del método está calculado según el promedio (μ) y la desviación estándar (σ) a partir de las 5 ejecuciones del mismo método sobre el mismo conjunto de datos.)
 
 - Cabe mencionar que para esta entrega, los resultados entregados en la plantalla de la terminal pueden tener cierta demora para el último caso. Esto se debe a que el archivo `codes_10M.txt` cuenta con 10 millones de códigos postales, sin embargo, el código fue probado y funciona correctamente (pero con paciencia, asi que se recomienda ir a preparar un café mientras carga este último caso).
 
